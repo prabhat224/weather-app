@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:wght@600&family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,600&family=Roboto:ital,wght@0,300;0,400;1,900&family=Zen+Dots&display=swap');
+*{
+    margin: 0;
+    padding:0;
+    box-sizing: border-box;
+
+}
+body{
+    background-image: url(/images/def3.jpg);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: 'Roboto', sans-serif;
+    
+}
+.flex{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.summer{
+    background-image: url(/images/summerclean\ \(1\).jpg);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.winter{
+    background-image: url(/images/winterfinal.jpg);
+    width: auto;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+}
+.main{
+    height: 420px;
+    width: 400px;
+    background-color: black;
+    opacity: 0.8;
+    margin: auto;
+    margin-top:100px ;
+    border-radius: 10px;
+    color: white;
+
+}
+.search_box{
+    width: 85%;
+    height: 40px;
+    border-radius:20px ;
+    margin-left: 15px;
+    margin-top: 10px;
+
+
+}
+.search_box input{
+    background-color: rgb(86, 84, 84);
+    border: none;
+    color: white;
+    padding-left: 40px;
+
+}
+
+.search{
+    display: flex;
+    flex-direction: row;
+}
+.search_icon{
+    margin-top: 20px;
+    background-color:rgb(86, 84, 84) ;
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition-duration: 500ms;
+
+}
+.search_icon:hover{
+    background-color: rgb(164, 157, 157);
+}
+.search_icon i{
+    padding: 10px;
+    cursor: pointer;
+}
+.weather_info{
+    padding-top: 20px;
+    padding-left: 20px;
+}
+.search_box  ::placeholder{
+    color: white;
+    opacity: 0.8;
+    padding-left:auto;
+}
+
+.place {
+    font-size:30px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+}
+.country{
+    font-size:10px;
+    padding-bottom: 20px;
+    padding-top: 20px;
+    padding-left: 3px;
+}
+.temp{
+    font-size: 50px;
+    padding-bottom: 20px;
+}
+.sky,.wind,.humidity{
+    padding: 3px;
+    font-size: 20px;
+    padding-top: 3px;
+    color: white;
+}
+.sub_prop{
+    padding-top: 8px;
+}
+.icon{
+    width: 80px;
+    height: 80px;
+}
+@media  screen and (max-width: 500px){
+    .main{
+        width: 100vw;
+        border-radius: 0%;
+        height: 100vh;
+        margin-top: 0%;
+        margin-left: 0;
+        padding-left: 0;
+    }
+    .search_icon{
+        padding-right: 3px;
+        padding-left: 0%;
+    }
+    .search_box{
+        margin-left: 0%;
+    }
+
+}
